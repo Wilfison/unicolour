@@ -1,0 +1,67 @@
+body{
+    background: #0b0c0e;
+    font-family: Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #8e98a7;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* ------------------------------  View Palettes  --------------------  */
+.palettes__grid{
+    display: flex;
+    flex-direction: column;
+}
+.palette__componnet__colors{
+    display: flex;
+}
+.palette__componnet__color {
+    padding: .5em .8em;
+    margin: 5px;
+}
+/* ------------------------------ New Palete Page --------------------  */
+.new__palette__name{
+    display: flex;
+    flex-direction: column;
+}
+.new__palette__name #paletteName {
+    width: 100%;
+}
+.new__palette_colors__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.new__palette_colors__grid input {
+    max-width: 100%;
+}
+input[type=text]{
+    background: transparent;
+    border: 1px solid #8e98a7;
+    color: #8e98a7;
+    padding: .5em .3em;
+}
+
+/* ------------------------------     Buttons     ---------------------- */
+.btn__success{
+    background: #00E676;
+    color: #0b0c0e;
+    font-weight: 600;
+    border: none;
+    padding: .8em 3em;
+    margin: 20px 5px;
+    cursor: pointer;
+    transition: opacity .4s ease-in-out;
+}
+.btn__danger{
+    background: #F44336;
+    color: #0b0c0e;
+    font-weight: 600;
+    border: none;
+    padding: .8em 3em;
+    margin: 20px 5px;
+    cursor: pointer;
+    transition: opacity .4s ease-in-out;
+}
+.btn__success:hover, .btn__danger:hover {
+    opacity: .7;
+    color: #0b0c0e;
+}
