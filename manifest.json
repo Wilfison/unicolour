@@ -1,21 +1,26 @@
 {
-    "version": "1.0",
-    "content_security_policy": "default-src 'self'",
+    "version": "2",
+    "manifest_version": 2,
+    "description": "An example options ui",
+    "name": "Unicolour",
+    "content_security_policy": "default-src 'self'; script-src 'self'",
     "browser_action": {
         "default_title": "Unicolour",
         "default_icon": "icon.png",
         "default_popup": "popup.html"
     },
-    "description": "An example options ui",
-    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/favourite-colour",
-    "manifest_version": 2,
-    "name": "Unicolour",
     "options_ui": {
-        "page": "options.html",
+        "page": "popup.html",
         "browser_style": true
     },
+    "background": {
+        "scripts": [
+          "js/main.js"
+        ]
+    },
     "permissions": [
-        "storage"
+      "activeTab",
+      "storage"
     ],
     "web_accessible_resources":[
         "css/style.css",

@@ -28,7 +28,7 @@ body{
 }
 .new__palette_colors__grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .new__palette_colors__grid input {
     max-width: 100%;
